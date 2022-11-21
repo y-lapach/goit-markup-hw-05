@@ -192,6 +192,7 @@ margin-right: 50px;
 .contacts-list .contacts-link:hover,
 .contacts-list .contacts-link:focus {
     color: var(--accent-color);
+    transition: color var(--transition-time);
 }
 
 .icon-email,
@@ -245,6 +246,7 @@ address {
 .ftr-contacts .address-link:hover,
 .ftr-contacts .address-link:focus {
     color: var(--accent-color);
+    transition: color var(--transition-time);
 }
 .ftr-join .join {
     margin-bottom: 20px;
@@ -274,6 +276,7 @@ address {
 .ftr-socials-list .ftr-socials-item a:hover,
 .ftr-socials-list .ftr-socials-item a:focus {
     background-color: var(--accent-color);
+    transition: background-color var(--transition-time);
 }
 
 .ftr-socials-item .ftr-socials-icon {

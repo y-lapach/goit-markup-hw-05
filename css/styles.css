@@ -38,6 +38,7 @@
 .hero .hero-btn:focus {
     color: var(--accent-color);
     background-color: var(--primary-white);
+    transition: color var(--transition-time), background-color var(--transition-time);
 }
 
 /*-----------------------SECTION-------------------------*/
@@ -145,6 +146,7 @@
     color: var(--primary-white);
     background-color: var(--accent-color);
     border-radius: 50%;
+    transition: color var(--transition-time), background-color var(--transition-time), border-radius var(--transition-time);
 }
 .team-socials-item .team-socials-icon {
     fill: currentColor;
@@ -172,6 +174,7 @@
 .clients .client-item a:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
+    transition: color var(--transition-time), border-color var(--transition-time);
 }
 .client-item .client-logo {
     fill:currentColor;
@@ -234,6 +237,7 @@
 .projects-item a.projects-link:hover,
 .projects-item a.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition-time);
 }
 .projects .project-desc {
     padding:20px 24px;
