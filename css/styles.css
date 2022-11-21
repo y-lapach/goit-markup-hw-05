@@ -93,6 +93,23 @@
     display: flex;
     gap: 30px;
 }
+.services-item {
+    position: relative;
+}
+.services .services-label {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white);
+    background: rgba(47, 48, 58, 0.8);
+}
 
 /*-----TEAM-----*/
 .team {
@@ -208,9 +225,10 @@
 }
 .filter .filter-btn:hover,
 .filter .filter-btn:focus {
+    color: var(--primary-white);
     background-color: var(--accent-color);
-    color:var(--primary-white);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color var(--transition-time), background-color var(--transition-time), box-shadow var(--transition-time);
 }
 
 /*-----PROJECTS CARDS-----*/
