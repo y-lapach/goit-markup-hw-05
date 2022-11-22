@@ -16,8 +16,10 @@
     --bg-light-grey: #F5F4FA;
     --hero-bg:#C4C4C4;
     --blue-overlay:rgba(33, 150, 243, 0.9);
+    --grey-overlay:rgba(47, 48, 58, 0.8);
     --footer-bg: #2F303A;
     --footer-socials-bg:rgba(255, 255, 255, 0.1);
+    --backdrop: rgba(0, 0, 0, 0.2);
     /*Borders*/
     --header-border:#ECECEC;
     --border-light-grey:#EEEEEE;
@@ -36,6 +38,7 @@ html {
 }
 button {
     border-width: 0px;
+    cursor: pointer;
 }
 
 body {
