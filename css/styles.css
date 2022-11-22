@@ -32,12 +32,12 @@
     color: var(--primary-white);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--transition-time), background-color var(--transition-time);
 }
 .hero .hero-btn:hover,
 .hero .hero-btn:focus {
     color: var(--accent-color);
     background-color: var(--primary-white);
-    transition: color var(--transition-time), background-color var(--transition-time);
 }
 
 /*-----------------------SECTION-------------------------*/
@@ -68,10 +68,10 @@
 }
 .features-item .thumb {
     display: flex;
-    height: 120px;
-    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
     background-color: var(--bg-light-grey);
 }
 .features .title {
@@ -98,10 +98,11 @@
     position:absolute;
     bottom:0;
     left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-align: center;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -157,13 +158,12 @@
     height: 44px;
     border-radius: 50%;
     color:var(--main-icons-color);
+transition: color var(--transition-time), background-color var(--transition-time);
 }
 .team-socials .team-socials-item a:hover,
 .team-socials .team-socials-item a:focus {
-    border-radius: 50%;
     color: var(--primary-white);
     background-color: var(--accent-color);
-    transition: color var(--transition-time), background-color var(--transition-time), border-radius var(--transition-time);
 }
 .team-socials-item .team-socials-icon {
     fill: currentColor;
@@ -186,12 +186,12 @@
     border: 1px solid var(--main-icons-color);
     border-radius: 4px;
     color: var(--main-icons-color);
+    transition: color var(--transition-time), border-color var(--transition-time);
 }
 .clients .client-item a:hover,
 .clients .client-item a:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
-    transition: color var(--transition-time), border-color var(--transition-time);
 }
 .client-item .client-logo {
     fill:currentColor;
@@ -218,6 +218,7 @@
     line-height: 1.63;
     cursor: pointer;
     background-color: var(--bg-light-grey);
+    transition: color var(--transition-time), background-color var(--transition-time), box-shadow var(--transition-time);
 }
 
 .filter > li:first-child .filter-btn {
@@ -228,8 +229,7 @@
     color: var(--primary-white);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: color var(--transition-time), background-color var(--transition-time), box-shadow var(--transition-time);
-}
+    }
 
 /*-----PROJECTS CARDS-----*/
 .projects {
@@ -251,11 +251,11 @@
 .projects-item  a.projects-link {
     display: block;
     text-decoration: none;
+    transition: box-shadow var(--transition-time);
 }
 .projects-item a.projects-link:hover,
 .projects-item a.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow var(--transition-time);
 }
 .projects-about {
     position:relative;
@@ -271,7 +271,6 @@
     width: 100%;
     height: 100%;
     padding: 63px 24px;
-    text-align: center;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
@@ -281,7 +280,7 @@
 .projects-item a.projects-link:hover .projects-text,
 .projects-item a.projects-link:focus .projects-text {
     transform: translateY(0);
-    transition: transform var(--transition-time);
+
 }
 .projects .project-desc {
     padding:20px 24px;
